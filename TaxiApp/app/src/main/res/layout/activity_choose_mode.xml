@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".ChooseModeActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/background_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="215dp"
+            android:background="@color/orange_darkness"
+            android:gravity="center_horizontal"
+            android:text="Taxi App"
+            android:textColor="@color/purple"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/passengerButton"
+            android:onClick="goToPassengerSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="295dp"
+            android:background="@color/purple"
+            android:text="I'm Passenger"
+            android:textColor="@color/orange_darkness"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/driverButton"
+            android:onClick="goToDriverSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/orange_darkness"
+            android:text="I'm Driver"
+            android:textColor="@color/purple"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

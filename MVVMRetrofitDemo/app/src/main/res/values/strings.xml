@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MVVMRetrofitDemo</string>
+    <string name="api_key">b0d143675f6a7443f31dec2fec95cf15</string>
+    <string name="api_token">eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiMGQxNDM2NzVmNmE3NDQzZjMxZGVjMmZlYzk1Y2YxNSIsInN1YiI6IjY2MDA4NDdhZDM4YjU4MDE3ZDE5MmM3YiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.2DA8_sKdvL5V130_gPedgdtUO3Z6LeIr9aXLb-s8E28</string>
+    <string name="language">en-US</string>
+</resources>

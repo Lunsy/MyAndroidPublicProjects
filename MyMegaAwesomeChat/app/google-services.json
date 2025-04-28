@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "project number",
+    "project_id": "firebas projet id",
+    "storage_bucket": "firebase com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "your mobile id",
+        "android_client_info": {
+          "package_name": "com.example.mymegaawesomechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "your user id",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "your api key"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "your googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

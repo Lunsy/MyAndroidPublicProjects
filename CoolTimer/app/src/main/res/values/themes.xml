@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CoolTimer" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorSecondary">@color/grey</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+    </style>
+
+    <style name="Theme.CoolTimer" parent="Base.Theme.CoolTimer" />
+</resources>

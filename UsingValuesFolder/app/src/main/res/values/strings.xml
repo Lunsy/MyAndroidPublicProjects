@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UsingValuesFolder</string>
+    <string name="hello_textview">Hello</string>
+    <string name="hi_textview">Hi</string>
+</resources>

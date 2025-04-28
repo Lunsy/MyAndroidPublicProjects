@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="prevdesc">Play previos track</string>
+    <string name="stopdesc">Stop playing track</string>
+    <string name="playdesc">Play the track</string>
+    <string name="nextdesc">Play next track</string>
+</resources>
