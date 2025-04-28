@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/boston3"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="166dp"
+        android:layout_marginBottom="365dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/imageViewNote"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewLogo"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewLogo"
+        app:layout_constraintStart_toStartOf="@+id/imageViewLogo"
+        app:layout_constraintTop_toTopOf="@+id/imageViewLogo"
+        app:srcCompat="@drawable/baseline_music_note_100" />
+
+    <SeekBar
+        android:id="@+id/sonLenSeekBar"
+        android:layout_width="392dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="310dp"
+
+        android:maxHeight="10dp"
+        android:minHeight="10dp"
+        android:progressTint="#44B9CE"
+        android:thumbTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo" />
+
+    <TextView
+        android:id="@+id/trackTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/previosBgIV"
+        android:layout_width="65dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/stopBgIV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sonLenSeekBar"
+        app:layout_constraintVertical_bias="0.0"
+        android:onClick="prevTrack"
+        android:contentDescription="@string/prevdesc"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/stopBgIV"
+        android:layout_width="65dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/playBgIV"
+        app:layout_constraintStart_toEndOf="@+id/previosBgIV"
+        app:layout_constraintTop_toBottomOf="@+id/sonLenSeekBar"
+        app:layout_constraintVertical_bias="0.0"
+        android:onClick="stopTrack"
+        android:contentDescription="@string/stopdesc"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/playBgIV"
+        android:layout_width="65dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nextBgIV"
+        app:layout_constraintStart_toEndOf="@+id/stopBgIV"
+        app:layout_constraintTop_toBottomOf="@+id/sonLenSeekBar"
+        app:layout_constraintVertical_bias="0.0"
+        android:onClick="playTrack"
+        android:contentDescription="playdesc"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/nextBgIV"
+        android:layout_width="65dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playBgIV"
+        app:layout_constraintTop_toBottomOf="@+id/sonLenSeekBar"
+        app:layout_constraintVertical_bias="0.0"
+        android:onClick="nextTrack"
+        android:contentDescription="nextdesc"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/previosImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/previosBgIV"
+        app:layout_constraintEnd_toEndOf="@+id/previosBgIV"
+        app:layout_constraintStart_toStartOf="@+id/previosBgIV"
+        app:layout_constraintTop_toTopOf="@+id/previosBgIV"
+        app:layout_constraintVertical_bias="0.49"
+        app:srcCompat="@drawable/baseline_skip_previous_24" />
+
+    <ImageView
+        android:id="@+id/stopImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/stopBgIV"
+        app:layout_constraintEnd_toEndOf="@+id/stopBgIV"
+        app:layout_constraintStart_toStartOf="@+id/stopBgIV"
+        app:layout_constraintTop_toTopOf="@+id/stopBgIV"
+        app:srcCompat="@drawable/baseline_stop_24" />
+
+    <ImageView
+        android:id="@+id/playImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/playBgIV"
+        app:layout_constraintEnd_toEndOf="@+id/playBgIV"
+        app:layout_constraintStart_toStartOf="@+id/playBgIV"
+        app:layout_constraintTop_toTopOf="@+id/playBgIV"
+        app:srcCompat="@drawable/baseline_play_arrow_24" />
+
+    <ImageView
+        android:id="@+id/nextImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nextBgIV"
+        app:layout_constraintEnd_toEndOf="@+id/nextBgIV"
+        app:layout_constraintStart_toStartOf="@+id/nextBgIV"
+        app:layout_constraintTop_toTopOf="@+id/nextBgIV"
+        app:srcCompat="@drawable/baseline_skip_next_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
